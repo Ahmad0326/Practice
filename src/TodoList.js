@@ -37,6 +37,7 @@ export default function TodoList({ Todo, setTodo, items, func, index }) {
               alignItems: "center",
               textSizeAdjust: "auto",
               padding: "10px",
+              margin: "10px",
             }}
           >
             <button
