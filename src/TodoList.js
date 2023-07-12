@@ -9,7 +9,7 @@ export default function TodoList({ Todo, setTodo, items, func, index }) {
     seteditAble(!editAble);
   };
   useEffect(() => {
-    console.log("hello world asdaff");
+    console.log("hello world");
   });
   const handleEdit = (e) => {
     const value = e.target.value;
@@ -46,8 +46,8 @@ export default function TodoList({ Todo, setTodo, items, func, index }) {
           >
             <button
               onClick={() => func(index)}
-              className="btn"
-              aria-label="trash"
+              className="btn-can"
+              aria-label="trashBox"
             ></button>
           </span>
         </li>
