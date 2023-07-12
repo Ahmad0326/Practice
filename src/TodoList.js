@@ -47,7 +47,7 @@ export default function TodoList({ Todo, setTodo, items, func, index }) {
             <button
               onClick={() => func(index)}
               className="btn-close"
-              aria-label="trash"
+              aria-label="trash-can"
             ></button>
           </span>
         </li>
