@@ -9,7 +9,7 @@ export default function TodoList({ Todo, setTodo, items, func, index }) {
     seteditAble(!editAble);
   };
   useEffect(() => {
-    console.log("hello world");
+    console.log("hello world asdasd");
   });
   const handleEdit = (e) => {
     const value = e.target.value;
