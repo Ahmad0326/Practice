@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function TodoList({ Todo, setTodo, items, func, index }) {
   const [editAble, seteditAble] = useState(false);
@@ -8,11 +8,15 @@ export default function TodoList({ Todo, setTodo, items, func, index }) {
   const blur = () => {
     seteditAble(!editAble);
   };
+  useEffect(() => {
+    console.log("hello");
+  });
   const handleEdit = (e) => {
     const value = e.target.value;
     const index = Todo.findIndex((Todo) => Todo === e.target.defaultValue);
     Todo[index] = value;
     setTodo([...Todo]);
+    set;
   };
 
   return (
@@ -36,12 +40,8 @@ export default function TodoList({ Todo, setTodo, items, func, index }) {
             style={{
               alignItems: "center",
               textSizeAdjust: "auto",
-<<<<<<< HEAD
-              padding: "20px",
-=======
               padding: "10px",
               margin: "10px",
->>>>>>> main
             }}
           >
             <button
